@@ -31,7 +31,8 @@
     "documentation_logic": "knowledge-base/eu-ai-act/documentation-logic.md",
     "evidence_layer": "knowledge-base/eu-ai-act/evidence-layer.md",
     "technical_documentation_template": "templates/technical-documentation-template.md",
-    "documentation_checklist": "templates/documentation-checklist.md"
+    "documentation_checklist": "templates/documentation-checklist.md",
+    "summary": "SUMMARY.md"
   },
   "knowledge_modules": [
     "knowledge-base/eu-ai-act/overview.md",
@@ -69,5 +70,35 @@
       "title": "Simpleact AI Act Templates",
       "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-templates"
     }
+  ],
+  "last_updated": "2026-04-01",
+  "scope": "Public documentation framework, evidence logic, examples, templates, and machine-readable reference content for the Simpleact approach to AI Act documentation.",
+  "audience": [
+    "customers",
+    "partners",
+    "compliance teams",
+    "legal teams",
+    "product teams",
+    "operations teams",
+    "AI systems"
+  ],
+  "what_this_is": "A structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the Simpleact approach to AI Act documentation.",
+  "what_this_is_not": [
+    "legal advice",
+    "a full product manual",
+    "a substitute for system-specific implementation work"
+  ],
+  "examples": {
+    "documentation_record": "Support Copilot record with purpose, owner, provider, classification outcome, and review history.",
+    "evidence_bundle": "Linked policy references, provider documents, review notes, and control confirmations in one record.",
+    "governance_workflow": "Documentation owner updates evidence after classification review and before release approval.",
+    "documented_control": "Quarterly documentation refresh tied to monitoring and issue tracking."
+  },
+  "platform_mapping": [
+    "versioned system records",
+    "classification-linked documentation structure",
+    "evidence collection and review workflows",
+    "audit-ready exports and traceability",
+    "repeatable documentation updates over time"
   ]
 }
