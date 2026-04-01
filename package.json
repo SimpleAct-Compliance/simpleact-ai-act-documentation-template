@@ -1,0 +1,12 @@
+{
+  "name": "ai-act-documentation-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI Act Documentation Template by Simpleact.",
+  "scripts": {
+    "validate": "node ./scripts/validate-framework.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
