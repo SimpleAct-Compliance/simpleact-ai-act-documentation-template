@@ -47,5 +47,27 @@
     "templates/technical-documentation-template.md",
     "templates/documentation-checklist.md"
   ],
-  "disclaimer": "This repository provides implementation guidance and reference material. It is not legal advice."
+  "disclaimer": "This repository provides implementation guidance and reference material. It is not legal advice.",
+  "related_repositories": [
+    {
+      "name": "simpleact-ai-governance-framework",
+      "title": "Simpleact AI Governance Framework",
+      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework"
+    },
+    {
+      "name": "simpleact-ai-system-inventory",
+      "title": "Simpleact AI System Inventory",
+      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-system-inventory"
+    },
+    {
+      "name": "simpleact-ai-audit-readiness",
+      "title": "Simpleact AI Audit Readiness",
+      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-audit-readiness"
+    },
+    {
+      "name": "simpleact-ai-act-templates",
+      "title": "Simpleact AI Act Templates",
+      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-templates"
+    }
+  ]
 }
