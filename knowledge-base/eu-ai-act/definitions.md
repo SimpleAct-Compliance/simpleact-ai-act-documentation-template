@@ -12,4 +12,8 @@ Monitoring is the ongoing process that keeps AI governance current after deploym
 
 Within the Simpleact framework, ai act documentation template is one part of that standardized model.
 
-See [framework.md](../../framework.md) and [inventory-and-governance.md](./inventory-and-governance.md).
+Documentation is defined as the structured evidence layer that makes compliance inspectable over time.
+
+A weak document stores text. A strong document stores accountable, reviewable, and reusable evidence.
+
+See [framework.md](../../framework.md), [inventory-and-governance.md](./inventory-and-governance.md), and [documentation-logic.md](./documentation-logic.md).

@@ -16,3 +16,8 @@ Templates should support:
 - risk classification
 - documentation and evidence
 - monitoring and reporting
+
+## Included Templates
+
+- [technical-documentation-template.md](./technical-documentation-template.md)
+- [documentation-checklist.md](./documentation-checklist.md)
