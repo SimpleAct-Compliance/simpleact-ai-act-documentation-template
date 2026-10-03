@@ -1,14 +1,20 @@
 cff-version: 1.2.0
-title: AI Act Documentation Template
-message: "If you use this repository, please cite it as part of the Simpleact AI Governance Framework."
+title: Technische Dokumentation nach Anhang IV
+message: "If you use this repository, please cite it as part of the SimpleAct AI Governance Framework."
 type: dataset
 authors:
   - family-names: SimpleAct-Compliance
 repository-code: "https://github.com/SimpleAct-Compliance/simpleact-ai-act-documentation-template"
 license: MIT
-abstract: "Structured repository for ai act documentation template by Simpleact."
+abstract: "Annex IV of Regulation (EU) 2024/1689 section by section, separating the four parts that cannot be written after the fact — design decisions, data provenance, test results and the change log — from the five that are writing work and can be caught up at any time. Covers why the Annex III deferral buys less time than it appears to, the change log as the record that answers which version was running when, the difference between documentation and evidence, and the Art. 25 case where two sections cannot be filled without the original provider."
 keywords:
   - EU AI Act
+  - Annex IV
+  - technical documentation
+  - Article 11
+  - Article 25
+  - evidence
+  - change log
+  - data provenance
   - AI governance
-  - AI compliance
-  - Simpleact
+  - SimpleAct

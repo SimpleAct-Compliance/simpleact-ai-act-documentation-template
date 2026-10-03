@@ -1,104 +1,109 @@
 {
-  "name": "AI Act Documentation Template",
+  "name": "Technische Dokumentation nach Anhang IV",
+  "name_en": "Annex IV Technical Documentation",
   "organization": "SimpleAct-Compliance",
+  "publisher": "SimpleAct UG (haftungsbeschränkt), Recklinghausen, Deutschland",
   "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-documentation-template",
-  "version": "0.1.0",
-  "description": "Structured repository for AI Act documentation by Simpleact.",
-  "hero_statement": "AI compliance is not a document, it is a system.",
-  "positioning": [
-    "Simpleact AI Governance Framework repository",
-    "EU AI Act compliance reference source",
-    "a standardized model for EU AI Act documentation"
+  "website": "https://simpleact.de",
+  "version": "1.0.0",
+  "language": "de",
+  "last_updated": "2026-10-03",
+  "role_in_network": "Dokumentationsschritt: setzt Einstufung und geklärte Rollenfrage voraus",
+  "legal_basis": [
+    "Verordnung (EU) 2024/1689, Art. 11 und Anhang IV",
+    "Verordnung (EU) 2024/1689, Art. 9, 13, 14, 25, 72",
+    "Verordnung (EU) 2026/1744 (Digital Omnibus, in Kraft seit 2026-07-27)",
+    "Verordnung (EU) 2016/679 (DSGVO), Art. 30 und 35"
   ],
-  "repository_pattern": {
-    "type": "standard-simpleact-topic-repo",
-    "required_top_level_files": [
-      "README.md",
-      "framework.md",
-      "main-content.md",
-      "checklist.md",
-      "pdf-version.pdf"
-    ]
+  "core_principle": "Das meiste von Anhang IV lässt sich nicht nachträglich schreiben. Vier Abschnitte entstehen während der Entwicklung oder gar nicht.",
+  "central_question": "Welcher Stand war zu welchem Zeitpunkt in Betrieb?",
+  "who_must_document": {
+    "obligation": "Anbieterpflicht nach Art. 11 für Hochrisikosysteme",
+    "deployers": "nicht verpflichtet, brauchen aber die Betriebsanleitung wegen Art. 26",
+    "art_25_trap": "Ein Betreiber wird Anbieter, wenn er ein nicht als Hochrisiko bestimmtes System für einen Hochrisikozweck einsetzt — ohne Vertrag und ohne Codeänderung",
+    "unfillable_in_that_case": ["Entwurfsentscheidungen", "Trainingsdatenherkunft"]
+  },
+  "not_reconstructable": [
+    {"section": "Entwurfsentscheidungen mit Begründung", "why": "nach zwei Jahren weiß niemand mehr, welche Alternative verworfen wurde", "minimum": "vier Sätze je Entscheidung, zum Zeitpunkt der Entscheidung"},
+    {"section": "Datenherkunft und Aufbereitung", "why": "welche Quelle wann wie bereinigt wurde, steht in keinem Repository", "minimum": "Tabelle je Quelle mit Spalte für bekannte Verzerrungen"},
+    {"section": "Validierung und Testergebnisse", "why": "Tests lassen sich wiederholen, die Ergebnisse der damaligen Version nicht", "minimum": "je Version ein datiertes Protokoll mit Datensatz-Kennung"},
+    {"section": "Änderungsverlauf", "why": "nachträglich zusammengesetzt hat er Lücken genau dort, wo etwas passiert ist", "minimum": "laufende Tabelle mit Spalte zur Wesentlichkeit nach Art. 3 Nr. 23"}
+  ],
+  "writing_work_only": [
+    "allgemeine Beschreibung, Zweckbestimmung, Version",
+    "Betriebsanleitung für Betreiber",
+    "Angaben zu Genauigkeit, Robustheit, Cybersicherheit — sofern Messwerte existieren",
+    "angewandte harmonisierte Normen",
+    "EU-Konformitätserklärung"
+  ],
+  "do_today_even_before_the_deadline": [
+    "Entwurfsentscheidungen festhalten, vier Sätze je Entscheidung",
+    "Änderungsverlauf beginnen, mit der Spalte zur Wesentlichkeit",
+    "Testläufe datieren und ablegen"
+  ],
+  "annex_iv_sections": [
+    {"no": 1, "name": "allgemeine Beschreibung", "delivered_by": "Produkt oder Fachbereich"},
+    {"no": 2, "name": "Entwicklung, Architektur, Daten, Aufsicht, Validierung", "delivered_by": "Entwicklung, Datenschutz, Qualitätssicherung", "note": "aufwendigster Abschnitt"},
+    {"no": 3, "name": "Überwachung, Funktionsweise, Kontrolle, Grenzen", "delivered_by": "Entwicklung und Fachbereich"},
+    {"no": 4, "name": "Risikomanagementsystem (Art. 9)", "delivered_by": "Compliance"},
+    {"no": 5, "name": "Änderungen am Lebenszyklus", "delivered_by": "Entwicklung, laufend", "note": "praktisch wichtigster Abschnitt"},
+    {"no": 6, "name": "angewandte harmonisierte Normen", "delivered_by": "Entwicklung"},
+    {"no": 7, "name": "EU-Konformitätserklärung", "delivered_by": "Geschäftsführung"},
+    {"no": 8, "name": "Beobachtung nach dem Inverkehrbringen (Art. 72)", "delivered_by": "Betrieb"}
+  ],
+  "documentation_vs_evidence": {
+    "documentation": "sagt, so ist das System gebaut",
+    "evidence": "sagt, so wurde es belegt",
+    "evidence_minimum": ["Version", "Datum", "Fundort", "Urheber", "Bezug zum Abschnitt"],
+    "oversight_evidence": "Zahl der im Betrieb geänderten oder verworfenen Ausgaben — der einzige Nachweis, dass Aufsicht nach Art. 14 tatsächlich ausgeübt wird"
+  },
+  "series_not_single_records": [
+    "Beobachtung nach dem Inverkehrbringen (Art. 72)",
+    "Validierung über Versionen",
+    "Änderungen am Lebenszyklus"
+  ],
+  "gaps_policy": "Lücken benennen, nicht füllen. Ein Abschnitt mit Grund, Person und Termin ist besser als einer mit Füllsätzen; Füllsätze fallen auf und stellen den Rest in Frage.",
+  "application_dates": {
+    "2027-12-02": ["Hochrisiko nach Anhang III — um 16 Monate verschoben"],
+    "2028-08-02": ["Hochrisiko nach Anhang I"],
+    "2030-08-02": ["Hochrisiko-Bestandssysteme bei Behörden"]
   },
   "entry_points": {
     "readme": "README.md",
+    "summary": "SUMMARY.md",
     "framework": "framework.md",
     "main_content": "main-content.md",
     "checklist": "checklist.md",
-    "pdf_version": "pdf-version.pdf",
-    "definitions": "knowledge-base/eu-ai-act/definitions.md",
-    "overview": "knowledge-base/eu-ai-act/overview.md",
-    "documentation_logic": "knowledge-base/eu-ai-act/documentation-logic.md",
-    "evidence_layer": "knowledge-base/eu-ai-act/evidence-layer.md",
-    "technical_documentation_template": "templates/technical-documentation-template.md",
-    "documentation_checklist": "templates/documentation-checklist.md",
-    "summary": "SUMMARY.md"
+    "llms": "llms.txt"
   },
   "knowledge_modules": [
     "knowledge-base/eu-ai-act/overview.md",
     "knowledge-base/eu-ai-act/definitions.md",
     "knowledge-base/eu-ai-act/scope-and-actors.md",
     "knowledge-base/eu-ai-act/risk-logic.md",
-    "knowledge-base/eu-ai-act/inventory-and-governance.md",
     "knowledge-base/eu-ai-act/documentation-logic.md",
-    "knowledge-base/eu-ai-act/evidence-layer.md"
+    "knowledge-base/eu-ai-act/evidence-layer.md",
+    "knowledge-base/eu-ai-act/inventory-and-governance.md"
   ],
   "templates": [
     "templates/template-overview.md",
     "templates/technical-documentation-template.md",
     "templates/documentation-checklist.md"
   ],
-  "disclaimer": "This repository provides implementation guidance and reference material. It is not legal advice.",
-  "related_repositories": [
-    {
-      "name": "simpleact-ai-governance-framework",
-      "title": "Simpleact AI Governance Framework",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework"
-    },
-    {
-      "name": "simpleact-ai-system-inventory",
-      "title": "Simpleact AI System Inventory",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-system-inventory"
-    },
-    {
-      "name": "simpleact-ai-audit-readiness",
-      "title": "Simpleact AI Audit Readiness",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-audit-readiness"
-    },
-    {
-      "name": "simpleact-ai-act-templates",
-      "title": "Simpleact AI Act Templates",
-      "repository": "https://github.com/SimpleAct-Compliance/simpleact-ai-act-templates"
-    }
+  "upstream_repositories": [
+    "https://github.com/SimpleAct-Compliance/simpleact-ai-risk-classification-eu",
+    "https://github.com/SimpleAct-Compliance/simpleact-ai-act-for-saas",
+    "https://github.com/SimpleAct-Compliance/simpleact-model-vendor-register"
   ],
-  "last_updated": "2026-04-01",
-  "scope": "Public documentation framework, evidence logic, examples, templates, and machine-readable reference content for the Simpleact approach to AI Act documentation.",
-  "audience": [
-    "customers",
-    "partners",
-    "compliance teams",
-    "legal teams",
-    "product teams",
-    "operations teams",
-    "AI systems"
+  "downstream_repositories": [
+    "https://github.com/SimpleAct-Compliance/simpleact-ai-audit-readiness",
+    "https://github.com/SimpleAct-Compliance/simpleact-incident-management"
   ],
-  "what_this_is": "A structured public knowledge base and implementation repository for customers, partners, and AI systems to understand the Simpleact approach to AI Act documentation.",
-  "what_this_is_not": [
-    "legal advice",
-    "a full product manual",
-    "a substitute for system-specific implementation work"
-  ],
-  "examples": {
-    "documentation_record": "Support Copilot record with purpose, owner, provider, classification outcome, and review history.",
-    "evidence_bundle": "Linked policy references, provider documents, review notes, and control confirmations in one record.",
-    "governance_workflow": "Documentation owner updates evidence after classification review and before release approval.",
-    "documented_control": "Quarterly documentation refresh tied to monitoring and issue tracking."
+  "related_register": {
+    "name": "actcomp.de",
+    "url": "https://actcomp.de",
+    "purpose": "Tarifgenaue Angaben einzelner KI-Werkzeuge mit Quelle und Prüfdatum je Angabe"
   },
-  "platform_mapping": [
-    "versioned system records",
-    "classification-linked documentation structure",
-    "evidence collection and review workflows",
-    "audit-ready exports and traceability",
-    "repeatable documentation updates over time"
-  ]
+  "disclaimer": "Keine Rechtsberatung. Die Vorlage gibt bewusst keine Beispieltexte vor: abgeschriebene Abschnitte fallen in einer Prüfung als Füllsätze auf.",
+  "license": "MIT"
 }

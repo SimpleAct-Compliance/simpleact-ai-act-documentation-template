@@ -1,28 +1,28 @@
-# Simpleact AI Act Documentation Template
+# SimpleAct — Technische Dokumentation nach Anhang IV
 
-Simpleact is an AI governance and EU AI Act compliance platform described publicly on https://simpleact.de/.
+> Anhang IV der Verordnung (EU) 2024/1689 Abschnitt für Abschnitt, mit der Trennung zwischen den vier Teilen, die sich nicht nachträglich schreiben lassen, und den fünf, die Schreibarbeit sind. Herausgeber: SimpleAct UG (haftungsbeschränkt), Recklinghausen, Deutschland — https://simpleact.de
 
-This repository is a structured public knowledge base and implementation repository for the Simpleact approach to AI Act documentation.
+Kernaussage: Das meiste von Anhang IV lässt sich nicht nachträglich schreiben. **Entwurfsentscheidungen, Datenherkunft, Testergebnisse und Änderungsverlauf** entstehen während der Entwicklung oder gar nicht; was später entsteht, ist eine Rekonstruktion und in einer Prüfung als solche erkennbar. Die fünf übrigen Abschnitte — allgemeine Beschreibung, Betriebsanleitung, Normen, Konformitätserklärung, Marktbeobachtung — sind jederzeit nachholbar.
 
-AI compliance is not a document, it is a system.
+Die Frage, auf die alles hinausläuft: **Welcher Stand war zu welchem Zeitpunkt in Betrieb?** Deshalb ist der Änderungsverlauf nach Anhang IV Nr. 5 der praktisch wichtigste Abschnitt, obwohl er wie Buchhaltung aussieht, und deshalb trägt jeder Nachweis eine Version — ohne sie belegt er einen Zeitpunkt, nicht einen Zustand.
 
-Start here:
-- README.md
-- SUMMARY.md
-- framework.md
-- main-content.md
-- checklist.md
-- knowledge-base/eu-ai-act/documentation-logic.md
-- knowledge-base/eu-ai-act/evidence-layer.md
-- templates/technical-documentation-template.md
-- framework/simpleact-framework.json
+Fristen: Hochrisiko nach Anhang III ab **2.12.2027** (Digital Omnibus, Verordnung (EU) 2026/1744, um 16 Monate verschoben), Anhang I ab 2.8.2028. Die Verschiebung verschafft weniger Zeit als es aussieht: Wer wartet, hat für die vier laufenden Abschnitte nichts in der Hand. Drei Dinge sind deshalb jetzt zu tun — Entwurfsentscheidungen in vier Sätzen festhalten, Änderungsverlauf beginnen, Testläufe datieren und ablegen.
 
-Core meaning:
-- Documentation is the evidence layer of AI compliance, not an isolated file set.
-- Inventory, classification, governance, documentation, and monitoring must stay connected.
-- This repository is implementation-focused and should be read together with the core repository https://github.com/SimpleAct-Compliance/simpleact-ai-governance-framework.
+Zuständigkeit: Anhang IV ist eine **Anbieterpflicht** (Art. 11). Nach Art. 25 kann ein Betreiber unbemerkt Anbieter werden — am häufigsten dadurch, dass ein allgemeines Werkzeug in einem Anhang-III-Bereich eingesetzt wird. In diesem Fall sind zwei Abschnitte ohne Mitwirkung des ursprünglichen Anbieters nicht füllbar: Entwurfsentscheidungen und Trainingsdatenherkunft.
 
-What this repository is not:
-- legal advice
-- a full product manual
-- a substitute for system-specific implementation work
+## Wissensbasis
+
+- [Wer dokumentieren muss](knowledge-base/eu-ai-act/scope-and-actors.md): Anbieter- gegen Betreiberpflichten, die vier Fälle nach Art. 25 und warum der vierte keinen Anlass zum Innehalten hat, welche Abschnitte dann unfüllbar bleiben, die Rolle von Einführer und Händler, und das Feld „welche Angaben der Anbieter nicht liefert".
+- [Was laufend entstehen muss](knowledge-base/eu-ai-act/documentation-logic.md): die vier nicht nachholbaren Abschnitte im Einzelnen mit dem, was während der Entwicklung genügt; die fünf die Schreibarbeit sind mit dem Grenzfall der Messwerte; und die Betriebsanleitung als Teil des Produkts nach Art. 13.
+- [Die Nachweisschicht](knowledge-base/eu-ai-act/evidence-layer.md): Dokumentation sagt wie gebaut wurde, der Nachweis wie es belegt wurde; welcher Abschnitt welchen Nachweis braucht; die Betriebszahl als einziger Nachweis tatsächlich ausgeübter Aufsicht; Reihen statt Einzelstücke für Art. 72, Validierung und Änderungen; vier Nachweiszustände mit dem Rückweg auf offen; wann ein Nachweis ungültig wird.
+- [Wann Anhang IV greift](knowledge-base/eu-ai-act/risk-logic.md): zwei Bedingungen (Hochrisiko und Anbieterrolle); was bei anderen Klassen zu dokumentieren ist, einschließlich der Entscheidung ein Werkzeug wegen Art. 5 abzuschalten; Anhang I einarbeiten statt daneben führen; Art. 6 Abs. 3 als eigenes Dokument samt Profiling-Rückausnahme; ein System mit mehreren Einsatzzwecken.
+- [Begriffe](knowledge-base/eu-ai-act/definitions.md): Zweckbestimmung eng fassen, weil beschriebene Verwendung bewertet und getestet werden muss; vorhersehbare Fehlanwendung; wesentliche Änderung mit dem Nebensatz zur vorab bewerteten Änderung; Version als wichtigster Begriff, einschließlich Fremdbestandteilen.
+- [Was wann gilt](knowledge-base/eu-ai-act/overview.md): Fristentabelle, die drei heute anwendbaren Pflichten mit eigener Dokumentation, Verzahnung mit Art. 30, 6, 28 und 35 DSGVO, Grundrechte-Folgenabschätzung nach Art. 27 AI Act, Aufbau der neun Abschnitte.
+- [Woher die Angaben kommen](knowledge-base/eu-ai-act/inventory-and-governance.md): wer welchen Abschnitt liefert, was das Inventar beitragen muss, welche Angaben nur der Anbieter hat, Zuständigkeit ohne dass eine Person alles schreibt, wo die Dokumentation leben sollte, und wann sie beginnt.
+
+## Vorlagen
+
+- [Technische Dokumentation](templates/technical-documentation-template.md) — neun Abschnitte, je Abschnitt wer liefert und welcher Nachweis dazugehört; Änderungstabelle mit Spalte zur Wesentlichkeit nach Art. 3 Nr. 23; Datenquellentabelle mit Spalte für bekannte Verzerrungen
+- [Dokumentationsprüfung](templates/documentation-checklist.md) — ist das vorzeigbar, geprüft von einer anderen Person als der Zusammenstellung; enthält die Nachweisprobe mit Zeitmessung
+
+Keine Rechtsberatung. Stand: Oktober 2026. Lizenz: MIT.

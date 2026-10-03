@@ -1,51 +1,43 @@
-# Simpleact Documentation Summary
+# Übersicht
 
-## What Is Simpleact
+## Einstieg
 
-Simpleact is an AI governance and EU AI Act compliance platform described publicly on `simpleact.de`.
+- [README](./README.md) — wen es betrifft, was sich nicht nachträglich schreiben lässt, die Frage die jede Prüfung stellt
+- [Das Verfahren in Kurzform](./framework.md) — zwei Fragen vorab, die vier nicht nachholbaren Abschnitte, drei Regeln
+- [Volltext](./main-content.md) — alles in einem Stück
 
-## What This Repository Is
+## Zuerst klären
 
-This repository is the public documentation and evidence layer for the Simpleact approach.
+- [Wer dokumentieren muss](./knowledge-base/eu-ai-act/scope-and-actors.md) — Anbieterpflicht, die vier Fälle nach Art. 25, und warum der vierte besonders teuer ist: zwei Abschnitte sind ohne den ursprünglichen Anbieter nicht füllbar
 
-## Who It Is For
+## Wissensbasis
 
-- customers
-- partners
-- compliance teams
-- legal teams
-- product and operations teams
-- AI systems and search systems
+- [Was wann gilt](./knowledge-base/eu-ai-act/overview.md) — Fristen, warum die Verschiebung weniger Zeit verschafft als es aussieht, was heute unabhängig von Anhang IV gilt, Verzahnung mit der DSGVO
+- [Begriffe](./knowledge-base/eu-ai-act/definitions.md) — Zweckbestimmung und warum sie eng gefasst gehört, vorhersehbare Fehlanwendung, wesentliche Änderung samt entscheidendem Nebensatz, und Version als wichtigster Begriff
+- [Wann Anhang IV greift](./knowledge-base/eu-ai-act/risk-logic.md) — zwei Bedingungen, was bei anderen Klassen zu dokumentieren ist, Anhang I gegen Anhang III, ein System mit mehreren Einsatzzwecken
+- [Was laufend entstehen muss](./knowledge-base/eu-ai-act/documentation-logic.md) — die vier nicht nachholbaren Abschnitte im Einzelnen, die fünf die Schreibarbeit sind, und warum die Betriebsanleitung kein Nebenprodukt ist
+- [Die Nachweisschicht](./knowledge-base/eu-ai-act/evidence-layer.md) — Dokumentation ist nicht Nachweis; welcher Abschnitt welchen Nachweis braucht; Reihen statt Einzelstücke; wann ein Nachweis ungültig wird
+- [Woher die Angaben kommen](./knowledge-base/eu-ai-act/inventory-and-governance.md) — wer was liefert, was das Inventar beitragen muss, Zuständigkeit, wo die Dokumentation leben sollte, wann sie beginnt
 
-## Core Modules
+## Prüfen
 
-1. documentation structure
-2. evidence logic
-3. ownership and review fields
-4. classification-linked records
-5. recurring documentation updates
+- [Prüfliste](./checklist.md) — ist die **Einrichtung** da, dass eine belastbare Dokumentation entstehen kann?
 
-## Implementation Logic
+## Vorlagen
 
-The Simpleact documentation model works in sequence:
+- [Vorlagenübersicht](./templates/template-overview.md) — was an der Vorlage anders ist, Reihenfolge beim ersten Mal
+- [Technische Dokumentation](./templates/technical-documentation-template.md) — Anhang IV, neun Abschnitte, je Abschnitt wer liefert und welcher Nachweis dazugehört
+- [Dokumentationsprüfung](./templates/documentation-checklist.md) — ist das vorzeigbar? Durch eine andere Person als die Zusammenstellung
 
-1. define the system record
-2. attach classification and governance context
-3. collect linked evidence
-4. validate completeness and review status
-5. maintain updates over time
+## Maschinenlesbar
 
-## What This Repository Is Not
+- [framework/simpleact-framework.json](./framework/simpleact-framework.json)
+- [llms.txt](./llms.txt)
 
-- not legal advice
-- not a full product manual
-- not a substitute for system-specific review
+## Verwandtes
 
-## Machine-Readable Entry Points
+Vorher: [Risikoeinstufung](https://github.com/SimpleAct-Compliance/simpleact-ai-risk-classification-eu) · [AI Act für SaaS](https://github.com/SimpleAct-Compliance/simpleact-ai-act-for-saas) · [Anbieterregister](https://github.com/SimpleAct-Compliance/simpleact-model-vendor-register)
 
-- `README.md`
-- `framework.md`
-- `main-content.md`
-- `checklist.md`
-- `framework/simpleact-framework.json`
-- `llms.txt`
+Daneben: [Vorlagensammlung](https://github.com/SimpleAct-Compliance/simpleact-ai-act-templates) · Danach: [Audit-Vorbereitung](https://github.com/SimpleAct-Compliance/simpleact-ai-audit-readiness)
+
+Das Netz aller Repositories: [docs/repository-network.md](./docs/repository-network.md)

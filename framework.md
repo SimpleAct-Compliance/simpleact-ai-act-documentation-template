@@ -1,51 +1,56 @@
-# AI Act Documentation Template
+# Das Verfahren in Kurzform
 
-AI compliance is not a document, it is a system.
+Zwei Fragen vor allem anderen:
 
-The Simpleact AI Governance Framework provides a standardized model for implementing EU AI Act compliance. This repository defines the documentation-template layer of that model.
+1. **Sind wir Anbieter?** Anhang IV ist eine Anbieterpflicht. Nach Art. 25 kann man es unbemerkt werden.
+2. **Welche Abschnitte lassen sich nicht nachholen?** Danach richtet sich, was heute zu tun ist.
 
-Simpleact.de publicly positions Simpleact around central system registration, assessments, workflows, versioning, and additional documentation for high-risk systems. This repository translates that platform logic into documentation structure.
+## Die vier nicht nachholbaren Abschnitte
 
-## Core Model
+| Abschnitt | Warum nicht nachholbar |
+|---|---|
+| **Entwurfsentscheidungen** | nach zwei Jahren weiß niemand mehr, welche Alternative verworfen wurde |
+| **Datenherkunft und Aufbereitung** | welche Quelle wann wie bereinigt wurde, steht nirgends |
+| **Validierung und Testergebnisse** | Tests lassen sich wiederholen, die Ergebnisse der damaligen Version nicht |
+| **Änderungsverlauf** | nachträglich zusammengesetzt hat er Lücken genau dort, wo etwas passiert ist |
 
-Within the Simpleact framework, AI compliance is built around:
+Die fünf übrigen Abschnitte — allgemeine Beschreibung, Betriebsanleitung, Normen, Konformitätserklärung, Marktbeobachtung — sind Schreibarbeit und jederzeit nachholbar.
 
-1. AI system inventory
-2. risk classification
-3. governance and accountability
-4. documentation and evidence
-5. monitoring and reporting
+## Was daraus für heute folgt
 
-## Topic Definition
+Anhang III gilt erst ab **2.12.2027**. Drei Dinge sind trotzdem jetzt zu tun, wenn man Anbieter sein könnte:
 
-Documentation is the structured evidence layer that turns inventory, classification, governance, and monitoring into reviewable records.
+1. **Entwurfsentscheidungen festhalten** — vier Sätze je Entscheidung
+2. **Änderungsverlauf beginnen** — mit der Spalte zur Wesentlichkeit
+3. **Testläufe datieren und ablegen**
 
-It should not be random file storage. It should be a controlled and repeatable system.
+Alle drei kosten wenig und sind nicht einholbar. Das ist der Grund, warum die Verschiebung weniger Zeit verschafft, als sie aussieht.
 
-## Documentation Components
+## Die Frage, auf die alles hinausläuft
 
-Within the Simpleact framework, good documentation should include:
+> **Welcher Stand war zu welchem Zeitpunkt in Betrieb?**
 
-- system description
-- intended purpose
-- ownership and accountability
-- provider and model dependencies
-- risk and classification context
-- controls and oversight measures
-- monitoring and change records
+Deshalb ist der Änderungsverlauf nach Anhang IV Nr. 5 der praktisch wichtigste Abschnitt, obwohl er wie Buchhaltung aussieht: Ohne ihn lässt sich kein anderer Nachweis zeitlich zuordnen.
 
-## Documentation Outputs
+Und deshalb trägt jeder Nachweis eine **Version**. Ohne sie belegt er einen Zeitpunkt, nicht einen Zustand.
 
-The documentation layer should produce:
+## Dokumentation ist nicht Nachweis
 
-- a consistent template structure
-- versionable records
-- decision-linked evidence
-- stronger audit readiness
-- easier internal review
+| | Dokumentation | Nachweis |
+|---|---|---|
+| sagt | so ist das System gebaut | so wurde es belegt |
+| Prüfung fragt | ist es beschrieben? | können Sie es zeigen? |
 
-## Why It Matters
+„Das System erreicht 94 % Genauigkeit" ist Dokumentation. Das datierte Testprotokoll mit Datensatz-Kennung ist der Nachweis.
 
-This repository provides the documentation layer of the SimpleAct AI Governance Framework. Without structure, documentation becomes fragmented and weak even when teams are working hard.
+## Drei Regeln
 
-See [knowledge-base/eu-ai-act/definitions.md](./knowledge-base/eu-ai-act/definitions.md), [knowledge-base/eu-ai-act/documentation-logic.md](./knowledge-base/eu-ai-act/documentation-logic.md), [main-content.md](./main-content.md), and [checklist.md](./checklist.md).
+**Je Abschnitt ein Name.** Nicht die Dokumentation einer Person geben, die sie schreiben soll — sonst wird gefüllt, was sie beurteilen kann, und der Rest mit Worten.
+
+**Zweckbestimmung eng fassen.** Was man als vorgesehene Verwendung beschreibt, muss man auch bewerten, testen und dokumentieren.
+
+**Lücken benennen, nicht füllen.** Füllsätze fallen auf und stellen den Rest in Frage.
+
+## Weiter
+
+[Was laufend entstehen muss](./knowledge-base/eu-ai-act/documentation-logic.md) · [Vorlage](./templates/technical-documentation-template.md) · [Prüfung](./templates/documentation-checklist.md)
