@@ -32,9 +32,11 @@ Drei Pflichten sind anwendbar und erzeugen eigene Dokumentation — auch für Be
 
 | Pflicht | Seit | Was zu dokumentieren ist |
 |---|---|---|
-| **Art. 5** verbotene Praktiken | 2.2.2025 | Prüfergebnis je Praktik, mit Datum |
-| **Art. 4** KI-Kompetenz | 2.2.2025 | wer geschult wurde, wann, zu welchem Inhalt |
+| **Art. 5** verbotene Praktiken | 2.2.2025, zwei neue ab 2.12.2026 | Prüfergebnis je Praktik, mit Datum |
+| **Art. 4** KI-Kompetenz | 2.2.2025, neu gefasst 27.7.2026 | welche Maßnahmen ergriffen wurden: wer geschult, wann, zu welchem Inhalt |
 | **Art. 50** Transparenz | 2.8.2026 | Kennzeichnung mit **Datum und Produktversion** |
+
+Zu Art. 5: Der Digital Omnibus hat zwei Praktiken ergänzt (Buchst. ba und bb — intime Darstellungen ohne Einwilligung, Missbrauchsdarstellungen), anwendbar **ab 2.12.2026**. Zu Art. 4: Verlangt sind seit dem 27.7.2026 **Maßnahmen zur Förderung** der KI-Kompetenz, nicht mehr ein sichergestelltes Niveau je Person — der Nachweis bleibt die Teilnahmeliste mit Inhaltsangabe.
 
 Diese drei sind der Teil mit Frist in der Vergangenheit. Sie sind klein, und sie werden regelmäßig übersehen, weil die Aufmerksamkeit bei Anhang IV liegt.
 
